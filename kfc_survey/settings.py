@@ -75,10 +75,10 @@ WSGI_APPLICATION = 'kfc_survey.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'test',
-        'USER': 'root',
-        'PASSWORD': 'yun0587',
-        'HOST': '127.0.0.1',
+        'NAME': 'kfc_survey_db',
+        'USER': 'quantum',
+        'PASSWORD': 'quantum159#$%',
+        'HOST': 'quantum-maria-db.ckgchpntybks.ap-northeast-2.rds.amazonaws.com',
         'PORT': '3306'
 
     }

@@ -2,16 +2,14 @@ from django.db import models
 from django.utils import timezone
 
 
-class Post(models.Model):
-    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
-    title = models.CharField(max_length=100)
-    content = models.TextField()
+class Admin(models.Model):
+    author = models.CharField(max_length=100)
+    password = models.CharField(max_length=100)
     created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now_add=True)
-    published_at = models.DateTimeField(blank=True, null=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
-    def publish(self):
-        self.published_at = timezone.now()
+    def create(self):
+        self.created_at = timezone.now()
         self.save()
 
     def __str__(self):
