@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>survey</title>
+    <script src="//code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    {% block content %}
+    <div id="root" style="width:100%; height:540px;">
+        <div id="headDiv" style="width: 100%; height: 80px; background-color: lightcoral;">
+            <h1 style="margin: auto 0px; text-align: center; position: relative; top: 30%; color: crimson; font-size: 1.5rem;">
+                KFC SURVEY AUTO SITE
+            </h1>
+        </div>
+        <div id="writeNum" style="margin: auto 0px; text-align: center; position: relative; top: 50%;">
+            <form id="surveyForm" method="post" action="{% url 'survey' %}">
+                {% csrf_token %}
+            번호 입력 : <input name="number" type="text">
+                <input id="subBtn" type="submit" value="확인">
+            </form>
+        </div>
+        <div style="margin: auto 0px; text-align: left; position: relative; top: 55%;">
+            {% if status == "설문 완료" %}
+                <p>상태: <p style="color:green;">{{ status }}</p></p>
+            {% elif status != "설문 완료" %}
+                <p>상태: <p style="color:red;">{{ status }}</p></p>
+            {% else %}
+            {% endif %}
+            {% endblock %}
+        </div>
+    </div>
+    <div id="footDiv" style="width: 100%; height: 80px; background-color: powderblue; bottom: 0px;">
+        <h1 style="margin: auto 0px; text-align: center; position: relative; top: 10%; color: crimson; font-size: 1.5rem;">
+            Made By hsyoon<br>
+            <h style="margin: auto 0px; text-align: center; position: relative; color: crimson; font-size: 1.0rem;">이제 니 알아서 해라 찐구야 ㅅㅂ</h>
+        </h1>
+    </div>
+</body>
+</html>

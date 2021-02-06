@@ -1,22 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script  src="//code.jquery.com/jquery-latest.min.js"></script>
-    <style>
-        #main {
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="//code.jquery.com/jquery-latest.min.js"></script>
+    <style type="text/css">
+        div {
             border : 1px;
+            border-color = black;
         }
     </style>
     <meta charset="UTF-8">
     <title>main page</title>
 </head>
 <body>
-    <div id="main">
-        <div>
-            ID : <input id="insertID"/>
+    <div id="main" style="height: 100%; width: 100%;">
+        <div id="headDiv" style="width: 100%; height: 80px; background-color: lightcoral;">
+            <h1 style="margin: auto 0px; text-align: center; position: relative; top: 30%; color: crimson; font-size: 1.5rem;">
+                KFC SURVEY AUTO SITE
+            </h1>
         </div>
-        <div>
-            PW : <input id="insertPW"/>
+        <div id="bodyDiv" style="position:absolute; top:50%; width: 100%; height: 200px;">
+            <form method="post" action="{% url 'posts' %}">
+                <div id="writeID">
+                    ID : <input name="userID" type="text"/>
+                </div>
+                <div id="writePW" style="top: 60px;">
+                    PW : <input name="password" type="password"/>
+                </div>
+                <button type="submit" style="">확인</button>
+            </form>
         </div>
     </div>
 </body>

@@ -67,7 +67,7 @@ gast==0.3.3
 gevent @ file:///C:/ci/gevent_1593005471151/work
 glob2==0.7
 gmpy2==2.0.8
-google-auth==1.21.2
+google-auth==1.21.1
 google-auth-oauthlib==0.4.1
 google-pasta==0.2.0
 greenlet==0.4.16
@@ -146,7 +146,6 @@ path==13.1.0
 pathlib2==2.3.5
 pathtools==0.1.2
 patsy==0.5.1
-pbr==5.5.1
 pep8==1.7.1
 pexpect==4.8.0
 pickleshare==0.7.5
@@ -168,8 +167,8 @@ pycurl==7.43.0.5
 pydocstyle @ file:///tmp/build/80754af9/pydocstyle_1592848020240/work
 pyflakes==2.2.0
 Pygments==2.6.1
+pykiwoom==0.0.6
 pylint @ file:///C:/ci/pylint_1592482039483/work
-PyMySQL==0.10.1
 PyNaCl @ file:///C:/ci/pynacl_1595000047588/work
 pyodbc===4.0.0-unsupported
 pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1594392929924/work
@@ -226,7 +225,6 @@ spyder-kernels @ file:///C:/ci/spyder-kernels_1594751670175/work
 SQLAlchemy @ file:///C:/ci/sqlalchemy_1593445271541/work
 sqlparse==0.4.1
 statsmodels==0.11.1
-stevedore==3.3.0
 sympy @ file:///C:/ci/sympy_1594234545115/work
 tables==3.6.1
 tblib==1.6.0
@@ -247,9 +245,7 @@ typing-extensions @ file:///tmp/build/80754af9/typing_extensions_1592847887441/w
 ujson==1.35
 unicodecsv==0.14.1
 urllib3==1.25.9
-virtualenv==20.4.0
-virtualenv-clone==0.5.4
-virtualenvwrapper==4.8.4
+virtualenv==20.4.2
 watchdog @ file:///C:/ci/watchdog_1593447437088/work
 wcwidth @ file:///tmp/build/80754af9/wcwidth_1593447189090/work
 webencodings==0.5.1
